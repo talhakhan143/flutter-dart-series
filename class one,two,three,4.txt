@@ -1,0 +1,99 @@
+void main(){
+  
+  String name = "talha";
+  int a = 2;
+  int b = 3;
+  print(a+b);
+
+  double pie = 3.47;
+  var area = 3.47+a*a;
+  print(area);
+
+  
+    //List
+  List<String> fruitNames = ['apple','banana','mango'];
+  print(fruitNames);
+  fruitNames.add("grapes");
+  print(fruitNames);
+
+  //loops
+  for(String fruit in fruitNames){
+    print(fruit);
+  }
+
+  //maps
+  Map<String, int> studentMarks = {
+    'Ali': 90,
+    'Khan' : 78,
+    'kabir' : 50,
+  };
+
+  studentMarks['Talha'] = 88;
+
+  print(studentMarks);
+  
+  //forEach
+  studentMarks.forEach((key,value){
+    print('Name: $key' '  Marks : $value');
+  });
+
+
+int temperature = 50;
+
+if(temperature > 30){
+  print("Hot today");
+}else if(temperature >= 20 && temperature < 30){
+  print("moderate");
+}else{
+  print("cold outside");
+}
+
+//switch case:
+
+String studentName = "Osama";
+
+switch(studentName){
+  case 'Talha':
+    print("Talha is here...");
+    break;
+
+  case 'Rahim':
+    print("Rahim is here");
+    break;
+
+  case 'Hamid':
+    print("hamid is here");
+    break;
+
+    default:
+      print("Student not found");
+      break;
+}
+
+  Gender selectedGender = Gender.Female;
+
+if(selectedGender == Gender.Female){
+  print("Female is here...");
+}else if(selectedGender == Gender.Male){
+  print("Male is here");
+}else{
+  print("Other is here");
+}
+
+}
+
+enum Gender{
+  Male,
+  Female,
+  Other,
+}
+
+
+
+
+
+
+
+
+
+
